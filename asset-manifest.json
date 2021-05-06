@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/landing-page/static/css/main.7dce88e8.chunk.css",
+    "main.js": "/landing-page/static/js/main.7cbfe373.chunk.js",
+    "main.js.map": "/landing-page/static/js/main.7cbfe373.chunk.js.map",
+    "runtime-main.js": "/landing-page/static/js/runtime-main.7eeea4f2.js",
+    "runtime-main.js.map": "/landing-page/static/js/runtime-main.7eeea4f2.js.map",
+    "static/js/2.39abdb5a.chunk.js": "/landing-page/static/js/2.39abdb5a.chunk.js",
+    "static/js/2.39abdb5a.chunk.js.map": "/landing-page/static/js/2.39abdb5a.chunk.js.map",
+    "static/js/3.a3d7a0ab.chunk.js": "/landing-page/static/js/3.a3d7a0ab.chunk.js",
+    "static/js/3.a3d7a0ab.chunk.js.map": "/landing-page/static/js/3.a3d7a0ab.chunk.js.map",
+    "index.html": "/landing-page/index.html",
+    "static/css/main.7dce88e8.chunk.css.map": "/landing-page/static/css/main.7dce88e8.chunk.css.map",
+    "static/js/2.39abdb5a.chunk.js.LICENSE.txt": "/landing-page/static/js/2.39abdb5a.chunk.js.LICENSE.txt",
+    "static/media/undraw_Code_review_re_woeb.e9fc0b5a.svg": "/landing-page/static/media/undraw_Code_review_re_woeb.e9fc0b5a.svg",
+    "static/media/undraw_Mailbox_re_dvds.3c8c8477.svg": "/landing-page/static/media/undraw_Mailbox_re_dvds.3c8c8477.svg",
+    "static/media/undraw_hacker_mindset_gjwq.d6bd8b28.svg": "/landing-page/static/media/undraw_hacker_mindset_gjwq.d6bd8b28.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7eeea4f2.js",
+    "static/js/2.39abdb5a.chunk.js",
+    "static/css/main.7dce88e8.chunk.css",
+    "static/js/main.7cbfe373.chunk.js"
+  ]
+}
