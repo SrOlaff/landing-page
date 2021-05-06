@@ -1,0 +1,99 @@
+@import "../../utilities/variables.scss";
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 100%; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: -100%;
+  background-color: $primary-color;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10%; /* Place content 60px from the top */
+  transition: right 0.5s ease; /* 0.5 second transition effect to slide in the sidenav */
+  font-family: "Megrim", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  animation-name: slideIn;
+}
+.div-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12%;
+
+  .div-links a:hover {
+    color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: $secundary-color;
+    font-size: 1.4em;
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  margin: 10% 10% 0 0;
+}
+
+.openBtn,
+.closeBtn {
+  color: $secundary-color;
+}
+.options {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 568px) {
+  .sidenav {
+    padding-top: 2%;
+  }
+  .div-links {
+    height: 18%;
+  }
+  .closeBtn {
+    margin: 5% 5%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .sidenav {
+    padding-top: 2%;
+  }
+  .div-links {
+    height: 14%;
+    a {
+      font-size: 1.7em;
+    }
+  }
+  .closeBtn {
+    margin: 5% 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  // NESSE MENU O DROPDOWN MENU É RENDERIZADO
+  .sidenav {
+    padding-top: 2%;
+  }
+  .div-links {
+    height: 14%;
+    a {
+      font-size: 2.7em;
+    }
+  }
+  .closeBtn {
+    margin: 5% 5%;
+  }
+  .openBtn,
+  .closeBtn {
+    font-size: 3em;
+  }
+}

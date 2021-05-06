@@ -1,0 +1,172 @@
+@import "../../utilities/variables.scss";
+
+.about-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+
+  .code-review {
+    width: 300px;
+    height: 300px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    align-items: center;
+    padding: 8% 7% 8%;
+    font-family: BioRhyme;
+    font-size: 1em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: justify;
+    color: $primary-color;
+    p {
+      margin: 2% 0;
+    }
+    h1 {
+      font-size: 2.55em;
+      font-family: Megrim;
+    }
+  }
+}
+@media (min-width: 568px) {
+  .about-component {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    .code-review {
+      width: 200px;
+      height: 200px;
+    }
+    .box {
+      width: 50%;
+      padding: 3% 4% 4%;
+      font-size: 0.82em;
+      p {
+        margin: 1% 0;
+      }
+      h1 {
+        margin: 0 0 5%;
+        font-size: 2em;
+      }
+    }
+    svg {
+      transform: scaleX(-1);
+    }
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .about-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    .code-review {
+      width: 400px;
+      height: 400px;
+    }
+    .box {
+      width: 70%;
+      padding: 6% 5% 6%;
+      font-size: 1.3em;
+      p {
+        margin: 1% 0;
+      }
+      h1 {
+        margin: 5% 0 5%;
+        font-size: 2.7em;
+      }
+    }
+    svg {
+      transform: none;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .about-component {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    .code-review {
+      width: 450px;
+      height: 450px;
+    }
+    .box {
+      width: 70%;
+      padding: 3% 5% 3%;
+      font-size: 1.5em;
+      p {
+        margin: 1% 0;
+      }
+      h1 {
+        margin: 3% 0 3%;
+        font-size: 2.3em;
+      }
+    }
+    svg {
+      transform: none;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1280px and up)
+@media (min-width: 1280px) {
+  .about-component {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    .code-review {
+      width: 350px;
+      height: 350px;
+    }
+    .box {
+      width: 50%;
+      padding: 4% 2% 4%;
+      font-size: 1.4em;
+      p {
+        margin: 2% 0;
+      }
+    }
+    svg {
+      transform: scaleX(-1);
+    }
+  }
+}
+// 1440px
+
+@media (min-width: 1440px) {
+  .about-component {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    .code-review {
+      width: 700px;
+      height: 700px;
+    }
+    .box {
+      width: 30%;
+      padding: 4% 2% 4%;
+      font-size: 1.4em;
+      p {
+        margin: 2% 0;
+      }
+    }
+    svg {
+      transform: scaleX(-1);
+    }
+  }
+}

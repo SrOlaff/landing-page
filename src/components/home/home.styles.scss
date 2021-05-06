@@ -1,0 +1,178 @@
+@import "../../utilities/variables.scss";
+.home-div {
+  width: 100%;
+  height: 100%;
+  background-color: $secundary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hacker-div {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  .hacker-mindset {
+    width: 350px;
+    height: 350px;
+  }
+}
+.typewriter {
+  color: $primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 50%;
+  font-size: 3em;
+  font-family: "Megrim", serif;
+  text-align: center;
+}
+
+// Small devices (landscape phones, 568px and up)
+@media (min-width: 568px) {
+  .home-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .hacker-div {
+    margin-top: 0;
+    width: 50%;
+    height: 100%;
+
+    .hacker-mindset {
+      width: 320px;
+      height: 320px;
+    }
+  }
+  .typewriter {
+    padding: 4%;
+    width: 50%;
+    height: 100%;
+    font-size: 2.8em;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+/* Estou colocando a orientação portrait para lidar com dispositivos que tem muita largura em modo landscape
+ por exemplo, o iphone xs por ser muito grande, quando colocado em modo landscape tem muita largura, então eu coloco
+ o orientation portrait para que esses estilos sejam aplicados apenas a tablets em modo retrato, o iphone xs terá
+ o estilo do media query anterior*/
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .home-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hacker-div {
+    margin-top: 0;
+    height: 60%;
+    width: 100%;
+    height: 100%;
+
+    .hacker-mindset {
+      width: 600px;
+      height: 600px;
+    }
+  }
+  .typewriter {
+    padding: 4%;
+    width: 70%;
+    height: 40%;
+    font-size: 3.9em;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .home-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .hacker-div {
+    margin-top: 0;
+    height: 60%;
+    width: 100%;
+
+    .hacker-mindset {
+      width: 460px;
+      height: 460px;
+    }
+  }
+  .typewriter {
+    padding: 0;
+    width: 100%;
+    height: 30%;
+    font-size: 4em;
+  }
+}
+
+// Extra large devices (large desktops, 1280px and up)
+@media (min-width: 1280px) {
+  .home-div {
+    background-color: $secundary-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .hacker-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    .hacker-mindset {
+      width: 600px;
+      height: 600px;
+    }
+  }
+  .typewriter {
+    color: $primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 70%;
+    width: 50%;
+    font-size: 4em;
+    font-family: "Megrim", serif;
+    text-align: center;
+    padding: 10%;
+  }
+}
+// 1440px
+@media (min-width: 1440px) {
+  .hacker-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    .hacker-mindset {
+      width: 700px;
+      height: 700px;
+    }
+  }
+
+  .typewriter {
+    color: $primary-color;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 78vh;
+    width: 50%;
+    font-size: 3.1em;
+    font-family: "Megrim", serif;
+    text-align: center;
+  }
+}

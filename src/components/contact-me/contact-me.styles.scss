@@ -1,0 +1,256 @@
+@import "../../utilities/variables.scss";
+
+.contact-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  .mailbox {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    height: 35%;
+    align-items: center;
+    padding: 8% 7% 8%;
+    font-family: BioRhyme;
+    font-size: 0.9em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    background-color: white;
+    border-radius: 40px;
+    text-align: justify;
+    color: $primary-color;
+    h1 {
+      font-size: 2.55em;
+      font-family: Megrim;
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .contact-field {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    p,
+    a {
+      width: 72%;
+      text-align: center;
+    }
+    a {
+      text-decoration: underline;
+      color: $primary-color;
+    }
+  }
+  .icon-container {
+    width: 50px;
+    height: 50px;
+    font-size: 1.4em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-color;
+    svg {
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  .contact-component {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    .code-review {
+      width: 220px;
+      height: 220px;
+    }
+
+    .box {
+      width: 50%;
+      height: 62%;
+      padding: 2.5% 2% 2%;
+    }
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .contact-component {
+    flex-direction: column;
+    .mailbox {
+      width: 350px;
+      height: 350px;
+    }
+
+    .box {
+      width: 70%;
+      height: 30%;
+      padding: 6% 5% 6%;
+      font-size: 1.5em;
+    }
+    .contact-container {
+      width: 100%;
+      height: 100%;
+    }
+    .contact-field {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      p,
+      a {
+        width: 72%;
+        text-align: center;
+      }
+      a {
+        text-decoration: underline;
+        color: $primary-color;
+      }
+    }
+    .icon-container {
+      width: 70px;
+      height: 70px;
+      font-size: 1.4em;
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .contact-component {
+    flex-direction: column;
+    justify-content: flex-start;
+    .mailbox {
+      width: 300px;
+      height: 300px;
+    }
+
+    .box {
+      width: 70%;
+      height: 45%;
+      padding: 3% 3% 3%;
+      font-size: 1.5em;
+    }
+    .contact-container {
+      width: 100%;
+      height: 100%;
+    }
+    .contact-field {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      p,
+      a {
+        text-align: left;
+        width: 70%;
+      }
+      a {
+        text-decoration: underline;
+        color: $primary-color;
+      }
+    }
+    .icon-container {
+      width: 80px;
+      height: 80px;
+      font-size: 1.4em;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1280px and up)
+@media (min-width: 1280px) {
+  .contact-component {
+    flex-direction: row;
+    justify-content: space-around;
+    .mailbox {
+      width: 300px;
+      height: 300px;
+    }
+
+    .box {
+      width: 50%;
+      height: 45%;
+      padding: 3% 3% 3%;
+      font-size: 1.5em;
+    }
+    .contact-container {
+      width: 100%;
+      height: 100%;
+    }
+    .contact-field {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      p,
+      a {
+        text-align: center;
+      }
+    }
+    .icon-container {
+      width: 80px;
+      height: 80px;
+      font-size: 1.4em;
+    }
+  }
+}
+// 1440px
+
+@media (min-width: 1440px) {
+  .contact-component {
+    flex-direction: row;
+    justify-content: space-around;
+    .mailbox {
+      width: 500px;
+      height: 500px;
+    }
+
+    .box {
+      width: 30%;
+      height: 45%;
+      padding: 3% 3% 3%;
+      font-size: 1.5em;
+    }
+    .contact-container {
+      width: 100%;
+      height: 100%;
+    }
+    .contact-field {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-around;
+      p,
+      a {
+        text-align: left;
+      }
+    }
+    .icon-container {
+      width: 80px;
+      height: 80px;
+      font-size: 1.4em;
+    }
+  }
+}

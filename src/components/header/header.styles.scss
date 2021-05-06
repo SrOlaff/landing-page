@@ -1,0 +1,174 @@
+@import "../../utilities/variables.scss";
+
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 16vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $primary-color;
+  z-index: 99;
+
+  .title-text {
+    color: $secundary-color;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .codigo {
+      font-family: "Work Sans", sans-serif;
+      font-size: 3em;
+      margin-right: 5%;
+      padding: 0;
+    }
+
+    .nome {
+      font-family: "Megrim", sans-serif;
+      font-size: 2em;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 568px) {
+  .header {
+    height: 28vh;
+    .title-text {
+      .codigo {
+        font-size: 3.9em;
+      }
+      .nome {
+        font-size: 2.4em;
+      }
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+
+/* Estou colocando a orientação portrait para lidar com dispositivos que tem muita largura em modo landscape
+ por exemplo, o iphone xs por ser muito grande, quando colocado em modo landscape tem muita largura, então eu coloco
+ o orientation portrait para que esses estilos sejam aplicados apenas a tablets em modo retrato, o iphone xs terá
+ o estilo do media query anterior*/
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .header {
+    height: 18vh;
+    .title-text {
+      .codigo {
+        font-size: 4.5em;
+      }
+      .nome {
+        font-size: 3.2em;
+      }
+    }
+  }
+  //
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .header {
+    height: 17.5vh;
+    .title-text {
+      width: 59%;
+      .codigo {
+        font-size: 5.7em;
+      }
+      .nome {
+        font-size: 3.6em;
+      }
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1280px) {
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary-color;
+    z-index: 99;
+
+    .title-text {
+      color: $secundary-color;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      margin-left: 5%;
+
+      .codigo {
+        font-family: "Work Sans", sans-serif;
+        font-size: 7em;
+        margin-right: 5%;
+        padding: 0;
+      }
+
+      .nome {
+        font-family: "Megrim", sans-serif;
+        font-size: 4.4em;
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 22vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary-color;
+    z-index: 99;
+
+    .title-text {
+      color: $secundary-color;
+      height: 100%;
+      width: 65%;
+      display: flex;
+      align-items: center;
+
+      .codigo {
+        font-family: "Work Sans", sans-serif;
+        font-size: 7em;
+        margin-right: 5%;
+        padding: 0;
+      }
+
+      .nome {
+        font-family: "Megrim", sans-serif;
+        font-size: 5em;
+      }
+    }
+  }
+}
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//     //
+//   }
+
+//   // Medium devices (tablets, 768px and up)
+//   @media (min-width: 768px) {
+//     //
+//   }
+
+//   // Large devices (desktops, 992px and up)
+//   @media (min-width: 992px) {
+//     //
+//   }
+
+//   // Extra large devices (large desktops, 1200px and up)
+//   @media (min-width: 1300px) {}
